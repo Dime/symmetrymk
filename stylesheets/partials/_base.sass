@@ -1,0 +1,48 @@
+
+//
+// Custom colors
+$one			: #06121d
+$two			: #db4828
+$three    : #c20000
+$four     : #2a2e35
+$black    : #444
+$light		: #eee
+$lighter	: #f9f9f9
+
+
+//
+// Fonts
+@font-face
+	font-family: 'tungsten'
+	src: url('fonts/tungsten-semibold-webfont.eot')
+	src: url('fonts/tungsten-semibold-webfont.eot?#iefix') format("embedded-opentype"), url('fonts/tungsten-semibold-webfont.woff') format("woff"), url('fonts/tungsten-semibold-webfont.ttf') format("truetype"), url('fonts/tungsten-semibold-webfont.svg#tungsten') format("svg")
+	font-weight: normal
+	font-style: normal
+
+
+//
+// Basic styles
+body
+	font: normal 18px/1.6 'Open Sans', Arial, sans-serif
+
+.horizontal
+	+pie-clearfix
+	
+	li
+		display: inline
+		float: left
+
+h1, h2, h3, h4, h5, h6
+	color: $four
+	font-family: 'noto serif', Arial, sans-serif
+	font-weight: normal
+	line-height: 1.6
+	
+h1
+	font-size: 70px
+h2
+	font-size: 55px
+h3
+	font-size: 40px
+h4
+	font-size: 20px

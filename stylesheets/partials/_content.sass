@@ -1,0 +1,151 @@
+.content
+  background: #fff
+  position: relative
+  z-index: 5
+  @include pie-clearfix
+  h1
+    font-size: 45px
+    text-align: center
+    img
+      display: inline-block
+    span
+      display: block
+      line-height: 1.2
+      margin: 25px 0
+  p
+    text-align: center
+
+.txt-heading
+  padding: 8em 0 2.5em
+  text-align: center
+  h1, h2
+    line-height: .85
+    margin-bottom: 30px
+  h1
+    color: $two
+  p
+    margin-bottom: 2em
+  .fa
+    color: $two
+    font-size: 1.2em
+    margin-right: 5px
+  .fa-phone
+    margin-left: 30px
+#office .txt-heading
+  padding-bottom: 0
+
+b
+  font-weight: bold
+
+.cta
+  background: #f5f5f5
+  display: block
+  padding: 5em 0
+  text-align: center
+
+  a
+    background: $two
+    color: #fff
+    display: block
+    margin: 0 auto
+    max-width: 300px
+    padding: 1em 1.5em
+    text-align: center
+    text-decoration: none
+    width: 90%
+    @include border-radius(2px)
+    @include transition(all .4s)
+    &:hover, &:focus
+      background: $two - #111
+    span
+      display: block
+      font: 40px Tungsten
+      text-transform: uppercase
+
+  &.double a
+    display: inline-block
+    margin: 0
+    width: 50%
+    &:first-child
+      margin-right: 15px
+    &:nth-child(2)
+      background: $light - #666
+      &:hover, &:focus
+        background: $light - #777
+
+.projects
+  overflow: hidden
+  @include pie-clearfix
+  li
+    border-top: 10px dotted #f5f5f5
+    padding-top: 7em
+    margin-bottom: 6em
+    min-height: 550px
+    position: relative
+    @include box-sizing(border-box)
+    @include pie-clearfix
+    @media screen and (min-width: 1441px)
+      margin-bottom: 7em
+      padding-top: 8em
+
+  .third
+    margin-bottom: 20px
+    max-width: 400px
+    text-align: center
+  .preview
+
+    position: relative
+    &.left
+      margin-left: -3em
+      img
+        left: -20em
+    &.right
+      margin-right: -3em
+      img
+        right: -20em
+    img
+      max-width: 100% !important
+      opacity: 0
+      position: relative
+      //@include scale(0)
+      &#animate1-1
+        width: 100%
+      &#animate1-2
+        bottom: 8%
+        position: absolute
+        width: 39%
+      &#animate1-3
+        bottom: 0
+        position: absolute
+        width: 17%
+
+  h2
+    color: $four
+    line-height: 1
+    margin-bottom: .2em
+    padding-top: 1em
+  p
+    color: $four
+    margin-bottom: 2em
+  a
+    background: $two
+    color: #fff
+    display: block
+    font-size: 16px
+    line-height: 1.35
+    margin: 0 auto
+    max-width: 60%
+    padding: 10px 20px
+    text-align: center
+    text-decoration: none
+    @include border-radius(2px)
+
+#work
+  ul
+    display: table
+  li
+    display: table-cell
+    text-align: center
+  ul img
+    margin-bottom: 20px
+    opacity: .2

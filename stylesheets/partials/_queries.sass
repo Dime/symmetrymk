@@ -1,0 +1,288 @@
+@media only screen and (max-width: 1440px)
+  #spaced
+    h1
+      font-size: 130px
+      
+    h2
+      //font-size: 28px
+
+  .projects
+    li
+      margin-bottom: 5em
+      padding-top: 6em
+
+@media only screen and (max-width: 1280px)
+  #spaced
+    h1
+      font-size: 100px
+      br
+        display: none
+    h2
+      font-size: 20px
+
+  .projects
+    li
+      margin-bottom: 2em
+      padding-top: 5em
+  .wrapper
+    width: 85%
+
+@media only screen and (max-width: 1200px)
+  .team li
+    height: 600px
+    width: 25%
+    img, canvas
+      margin-left: -35%
+
+@media only screen and (min-width: 801px)
+  #main-nav
+    display: block !important
+
+  .wrapper
+    max-width: 1280px
+
+@media only screen and (max-width: 800px)
+
+  #spaced
+    hgroup
+      top: 30%
+    h1
+      font-size: 110px
+      padding-right: 10%
+    h2
+      font-size: 28px
+
+  .gotointerns
+    display: none
+
+  body.fullstack #wall
+    h1
+      font-size: 80px !important
+    h2
+      font-size: 22px !important
+  #intern-info
+    .third
+      display: block
+      float: none
+      width: 100%
+
+  .half, .third, .two-thirds, .fourth
+    display: block
+    float: none
+    width: auto
+  .third
+    margin: 0 auto
+
+  #menu-toggle
+    display: block
+    font-size: 10px
+    padding: 2px
+
+  #header, #header.sticky
+    background: $one
+    position: fixed
+    top: 0
+    @include transition(background .4s)
+    #logo
+      margin-bottom: 0
+      img
+        max-width: 100px
+        @include transition(all .4s)
+    .wrapper
+      width: 90%
+      > span a
+        font-size: 14px
+
+  #main-nav
+    display: none
+    width: 100%
+    ul
+      border-top: 1px solid rgba(255, 255, 255, 0.04)
+      margin: 1em -5.5% 0
+      width: 111%
+      li
+        border-top: 1px solid rgba(255, 255, 255, 0.04)
+        width: 100%
+        &:hover
+          background: $two
+        a, .hireus
+          font-size: 14px
+          padding-left: 5%
+          &.hireus
+            background: transparent
+          &.active
+            color: #FFF
+
+  a#work-link
+    display: block
+  .wrapper
+    width: 80%
+  a
+    font-size: 14px
+    @include transition(font-size .4s)
+  h1
+    font-size: 75px
+    line-height: 1
+    margin-bottom: .5em
+  .projects
+    li
+      padding-top: 2em
+    .preview.left
+      margin-left: 0
+    .preview.right
+      margin-right: 0
+  .logos li
+    display: inline-block
+    float: none
+    height: 140px
+    margin-bottom: 20px
+    text-align: center
+    width: 140px
+  .team li
+    width: 50%
+    height: 500px
+    img, canvas
+      margin-left: 0
+      min-height: 600px
+      width: auto
+  .community
+    li
+      float: left
+      width: 50%
+  #map-canvas
+    height: 300px
+  #footer
+    .wrapper
+      padding-top: 4em
+    a.circle
+      top: -150px
+@media only screen and (max-width: 640px)
+  #spaced
+    hgroup
+      top: 30%
+    h1
+      font-size: 95px
+      margin-bottom: .4em
+    h2
+      font-size: 24px
+      max-width: 240px
+  body.fullstack #wall
+    h1
+      font-size: 60px !important
+    h2
+      font-size: 20px !important
+
+  .team li
+    img, canvas
+      margin-left: -25%
+  .community
+    li
+      width: 100%
+      padding-bottom: 0
+  .logos
+    h2
+      font-size: 45px
+
+@media only screen and (max-width: 480px)
+  #spaced
+    hgroup
+      top: 20%
+    h1
+      font-size: 80px
+      margin-bottom: .3em
+    h2
+      font-size: 21px
+      max-width: 240px
+  body.fullstack #wall
+    h1
+      font-size: 55px !important
+      margin-top: 50%
+      span
+        font-size: 30px !important
+    h2
+      font-size: 14px !important
+  #intern-info
+    img
+      max-width: 30%
+    p
+      font-size: 14px
+
+  .logos
+    .wrapper
+      width: 100%
+    ul
+      padding: 3em 0 0
+    li
+      height: 120px
+      width: 120px
+  .team li
+    img, canvas
+      margin-left: -50%
+      min-height: 450px
+
+@media only screen and (max-width: 400px)
+  body
+    font-size: 16px
+  h1
+    font-size: 60px
+  h2
+    font-size: 45px
+    margin-bottom: .5em
+  #header, #header.sticky
+    padding: 13px 0 10px
+    #logo img
+      max-width: 75px
+    span.right
+  a#menu-toggle
+    padding: 3px 2px
+    i
+      font-size: 2em
+      line-height: 1
+  a#work-link
+    color: #666
+    padding: 4px 10px
+
+  #spaced
+    hgroup
+      top: 28%
+      width: 100%
+    h1
+      font-size: 58px
+      line-height: .85
+      margin-bottom: .2em
+      padding-right: 0
+    h2
+      font-size: 18px
+      margin-top: 0
+      max-width: 240px
+  .scroll a
+    max-width: 150px
+    padding: 15px 0 5px
+  .txt-heading
+    padding-top: 5em
+  .planet
+    @include clearfix
+    margin: 0 0 30px
+    max-height: 300px
+    img
+      display: block
+      margin-top: 10px
+      width: 100%
+  .community li
+    height: auto
+    padding: 4em 0 0
+  .cta a
+    max-width: 200px
+  .team li
+    width: 100%
+    img, canvas
+      margin-left: 0
+  #footer
+    ul
+      float: left
+    .si
+      margin-bottom: 25px
+  .logos li
+    height: 100px
+    margin: 0 5px 10px
+    width: 100px
