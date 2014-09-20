@@ -14,7 +14,7 @@ class SinatraBootstrap < Sinatra::Base
   if ENV['RACK_ENV'] == 'production'
     mail_settings = { :address   => "smtp.sendgrid.net",
       :port      => 587,
-      :domain    => "siyelo.com",
+      :domain    => "symmetry.mk",
       :user_name => ENV['SENDGRID_USERNAME'],
       :password  => ENV['SENDGRID_PASSWORD'],
       :authentication => 'plain',

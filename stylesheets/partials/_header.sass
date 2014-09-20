@@ -17,24 +17,27 @@ html, body
     background: rgba(0, 0, 0, 0.8)
     background: rgba(219, 72, 40, .95)
     bottom: auto
+    padding: 0 25px
     position: fixed
     top: 0
     @include transition(background .4s)
     #logo
       display: block
-      margin: 13px 0
+      margin: 15px 0
       position: absolute
       img
         max-width: 120px
         @include transition(all .4s)
-    #main-nav a
-      color: #fff
-      font-size: 16px
-      margin: 25px
-      +text-shadow(none)
-      +transition(font-size .4s)
-      &.active
-        color: #111
+    #main-nav
+      text-align: right
+      a
+        color: #fff
+        font-size: 14px
+        margin: 28px 15px
+        +text-shadow(none)
+        +transition(font-size .4s)
+        &.active
+          color: #111
 
 // Logo
 #logo
@@ -69,7 +72,6 @@ a#work-link
 
 // Main navigation
 #main-nav
-
   text-align: center
   ul
     @include pie-clearfix
