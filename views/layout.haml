@@ -21,6 +21,7 @@
   %meta{:name => 'description', :content => @description}
   %meta{:name => 'keywords', :content => ""}
   %meta{:name => 'author', :content => 'Dime Pashoski'}
+  %script{src: '/javascripts/libs/jquery-1.10.2.min.js', type: "text/javascript"}
 
   -# Mobile viewport optimized: j.mp/bplateviewport
   %meta{:name => 'viewport', :content => 'width=device-width,initial-scale=1'}
@@ -50,7 +51,7 @@
   -# JavaScript at the bottom for fast page loading
 
   -# Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline
-  %script{src: '/javascripts/libs/jquery-1.10.2.min.js', type: "text/javascript"}
+  
   %script{src: "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js", type: "text/javascript"}
   %script{src: '/javascripts/libs/jquery-scrollintoview.js', type: "text/javascript"}
   %script{src: '/javascripts/mylibs/smooth-scroll.js', type: "text/javascript"}

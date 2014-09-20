@@ -733,6 +733,9 @@ b {
 #form {
   padding-bottom: 6em;
 }
+#form .wrapper {
+  width: 50%;
+}
 #form .txt-heading {
   padding-bottom: 1em;
 }
@@ -740,15 +743,24 @@ b {
   margin-bottom: 1.5em;
 }
 #form input[type=text], #form select, #form textarea {
-  background: rgba(0, 0, 0, 0.1);
-  border: none;
-  color: #06121d;
+  background: rgba(0, 0, 0, 0.01);
+  border: 1px solid #eeeeee;
+  color: #444444;
   font: normal 1em/1.4 "open sans";
   padding: 15px;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+#form input[type=text]:focus, #form select:focus, #form textarea:focus {
+  border-color: #db4828;
+  outline: none;
 }
 #form textarea {
   max-width: 100%;
@@ -760,15 +772,15 @@ b {
   color: white;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: bold;
   padding: 0.8em 3em;
   text-transform: uppercase;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
 
 .radio {
@@ -881,6 +893,10 @@ b {
 }
 .flash a:hover, .flash a:focus {
   opacity: 1;
+}
+
+#fav-movie {
+  display: none;
 }
 
 #footer {
@@ -1369,10 +1385,19 @@ body.fullstack #footer {
   }
   #spaced h1 {
     font-size: 110px;
-    padding-right: 10%;
+    margin-top: 20%;
+  }
+  #spaced h1 img {
+    width: auto;
   }
   #spaced h2 {
     font-size: 28px;
+  }
+
+  #space img {
+    height: 100%;
+    margin-left: -50%;
+    width: auto;
   }
 
   .gotointerns {
@@ -1409,7 +1434,6 @@ body.fullstack #footer {
   }
 
   #header, #header.sticky {
-    background: #06121d;
     position: fixed;
     top: 0;
     -webkit-transition: background 0.4s;

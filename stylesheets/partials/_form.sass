@@ -1,6 +1,7 @@
 #form
   padding-bottom: 6em
-
+  .wrapper
+    width: 50%
   .txt-heading
     padding-bottom: 1em
 
@@ -8,13 +9,17 @@
     margin-bottom: 1.5em
 
   input[type=text], select, textarea
-    background: rgba(0, 0, 0, .1)
-    border: none
-    color: $one
+    background: rgba(0, 0, 0, 0.01)
+    border: 1px solid #eee
+    color: #444
     font: normal 1em/1.4 'open sans'
     padding: 15px
     width: 100%
     @include box-sizing(border-box)
+    +border-radius(3px)
+    &:focus
+      border-color: $two
+      outline: none
 
   textarea
     max-width: 100%
@@ -26,11 +31,11 @@
     color: #fff
     cursor: pointer
     display: inline-block
-    font-size: 1.3em
+    font-size: 1.2em
     font-weight: bold
     padding: .8em 3em
     text-transform: uppercase
-    @include border-radius(2px)
+    @include border-radius(3px)
 
 
 //
@@ -134,3 +139,9 @@
     opacity: .6
     &:hover, &:focus
       opacity: 1
+
+//
+// Form Validation
+
+#fav-movie
+  display: none

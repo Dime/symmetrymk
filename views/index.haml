@@ -67,7 +67,7 @@
       %br
       Darka Panovska co-founder, translator and content strategist
 
-%section#form.content
+%section#contact#form.content
   .wrapper
     .txt-heading
       %h1
@@ -77,30 +77,21 @@
     %form{name: 'contact_email', action: '/', method: 'post'}
       %ul
         %li
-          %input{type: 'text', name: 'full_name', placeholder: 'What is your name'}
+          %input{type: 'text', name: 'full_name', placeholder: 'Name or Company'}
 
         %li
-          %input{type: 'text', name: 'email', placeholder: 'What is your email address?'}
+          %input{type: 'text', name: 'email', placeholder: 'Email address?'}
 
         %li
-          %input{type: 'text', name: 'phone', placeholder: 'What is your phone number?'}
+          %input{type: 'text', name: 'phone', placeholder: 'Phone number?'}
 
         %li
-          %textarea{type: 'text', name: 'description', placeholder: 'What would you like to hire Siyelo to do for you?'}
-
-        %li
-          %input{type: 'text', name: 'budget', placeholder: 'What is your budget?'}
+          %textarea{type: 'text', name: 'description', placeholder: 'What can we do for you?'}
 
         %li
           %input{type: 'text', id: 'fav_movie', name: 'favourite_movie', placeholder: 'What is your favourite movie?'}
 
         %li.center
           %input{type: 'submit', value: 'Send'}
-
-%script
-  $(document).ready(function(){
-  $('#fav_movie').hide();
-  });
-
 
 %script{:src => '/javascripts/mylibs/sticky-nav.js'}
