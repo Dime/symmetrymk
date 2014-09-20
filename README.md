@@ -53,7 +53,7 @@ so Compass can compile your SASS on the fly.
 
 ## Setup
 
-    git remote add production git@heroku.com:siyelo.git
+    git remote add production git@heroku.com:symmetrymk.git
 
 ## Deploy
 

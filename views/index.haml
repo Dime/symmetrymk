@@ -23,14 +23,6 @@
   #space
     %img{src:'/images/bg-light.jpg'}
 
-  %a.gotointerns#animate0-6{href:'/internships/full-stack', title: 'Apply for Full Stack Developer Internship', target: '_blank'}
-    Learn what it takes to be a web developer
-    %span Apply for Siyelo’s Full-Stack Developer Internship
-
-  %p.scroll#animate0-5
-    %a#work2.js-smooth{:href => "#work", title: 'Scroll down'}
-      %span keep going
-      %img{src: "/images/scroll.png", alt:'Scroll down arrow image'}
 #waves
   %img{src: '/images/waves.png'}
   %h2 We translate, create original content and make words sound meaningful in Macedonian, English, Albanian, Italian, Spanish & German.
@@ -75,11 +67,40 @@
       %br
       Darka Panovska co-founder, translator and content strategist
 
-%section#contact.content
+%section#form.content
   .wrapper
     .txt-heading
       %h1
         %img{src: '/images/divider.svg'}
         %span Get in touch
+
+    %form{name: 'contact_email', action: '/hire-us', method: 'post'}
+      %ul
+        %li
+          %input{type: 'text', name: 'full_name', placeholder: 'What is your name'}
+
+        %li
+          %input{type: 'text', name: 'email', placeholder: 'What is your email address?'}
+
+        %li
+          %input{type: 'text', name: 'phone', placeholder: 'What is your phone number?'}
+
+        %li
+          %textarea{type: 'text', name: 'description', placeholder: 'What would you like to hire Siyelo to do for you?'}
+
+        %li
+          %input{type: 'text', name: 'budget', placeholder: 'What is your budget?'}
+
+        %li
+          %input{type: 'text', id: 'fav_movie', name: 'favourite_movie', placeholder: 'What is your favourite movie?'}
+
+        %li
+          %input{type: 'submit', value: 'Send'}
+
+%script
+  $(document).ready(function(){
+  $('#fav_movie').hide();
+  });
+
 
 %script{:src => '/javascripts/mylibs/sticky-nav.js'}

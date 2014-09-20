@@ -1,0 +1,15 @@
+#flashes
+
+	- if flash[:notice]
+		.flash.notice
+			.wrapper
+				= flash[:notice]
+				%a.right.close{href: '#'}
+					%i.fa.fa-times
+
+	- if flash[:error]
+		.flash.error
+			.wrapper
+				= flash[:error]
+				%a.right.close{href: '#'}
+					%i.fa.fa-times

@@ -43,7 +43,7 @@
   %script{src: "https://maps.googleapis.com/maps/api/js?v=3.exp"}
 
 %body{"data-spy" => 'scroll', "data-target" => '#main-nav'}
-
+  = partial('./views/shared/_flashes.haml')
   = yield
   = partial('./views/shared/_footer.haml')
 

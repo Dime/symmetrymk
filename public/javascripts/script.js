@@ -242,43 +242,6 @@ $(document).ready(function($) {
   // scene.addIndicators();
 });
 
-
-// Google Maps API
-
-var map;
-var ctContentString = "<h2>Siyelo <span>Cape Town</span></h2>" + "<p>Suite 401, 79 Roeland Street, Cape Town, 8001, South Africa</p>"
-var ctInfoWindow = new google.maps.InfoWindow({
-      content: ctContentString
-  });
-
-function addMarker(map){
-  siyeloCT = new google.maps.LatLng(-33.929533,18.422235)
-  marker = new google.maps.Marker({
-    position: siyeloCT,
-    map: map,
-    title: "Siyelo Cape Town",
-  });
-
-  google.maps.event.addListener(marker, 'click', function() {
-    ctInfoWindow.open(map,marker);
-  });
-}
-
-function initialize() {
-  var mapOptions = {
-    zoom: 16,
-    center: new google.maps.LatLng(-33.929533,18.422235),
-    scrollwheel: false,
-
-  };
-  map = new google.maps.Map(document.getElementById('map-canvas'),
-      mapOptions);
-  addMarker(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-
 // Custom input type=file
 document.getElementById("uploadBtn").onchange = function () {
     document.getElementById("uploadFile").value = this.value;
