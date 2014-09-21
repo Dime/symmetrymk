@@ -23,21 +23,24 @@ html, body
     @include transition(background .4s)
     #logo
       display: block
-      margin: 15px 0
+      margin: 9px 0
       position: absolute
       img
-        max-width: 120px
         @include transition(all .4s)
     #main-nav
-      text-align: right
       a
+        background: none
+        border: none
         color: #fff
         font-size: 14px
-        margin: 28px 15px
+        margin: 0
+        padding: 20px
         +text-shadow(none)
         +transition(font-size .4s)
         &.active
           color: #111
+    .phone
+      display: block
 
 // Logo
 #logo
@@ -48,7 +51,7 @@ html, body
     @include pie-clearfix
   img
     float: left
-
+    max-width: 110px
     width: 100%
 
 
@@ -78,24 +81,39 @@ a#work-link
   li
     display: inline-block
   a
+    background: rgba(255, 255, 255, .2)
+    border: 1px solid #fff
     color: #222
     color: rgba(0, 0, 0, 0.7)
     display: block
-    font-size: 18px
+    font-size: 14px
     font-weight: 200
     letter-spacing: .5px
-    margin: 40px 20px
+    margin: 0 10px 40px
+    padding: 12px 25px
     text-decoration: none
     text-transform: uppercase
+    +border-radius(50px)
     +text-shadow(rgba(255, 255, 255, 0.2) 0 1px 2px)
-    &.hireus
-      background: $two
-      margin: 2px 0 0
-      padding: 10px 20px
-      @include border-radius(1px)
+    +transition(all .4s)
     &:hover, &:focus
-      color: #000
+      background: #fff
+      color: $two
     
+.phone
+  color: #fff
+  display: none
+  font-size: 14px
+  padding: 20px
+  position: absolute
+  text-transform: uppercase
+  right: 0
+  text-decoration: none
+  top: 0
+  i
+    font-size: 21px
+    left: -3px
+    position: absolute
 
 // Promo
 #spaced
@@ -128,7 +146,7 @@ a#work-link
     line-height: .9
 
   h1
-    font-family: 'noto serif'
+    font-family: 'philosopher'
     font-size: 100px
     +text-shadow(rgba(0, 0, 0, 0.5) 5px 5px 0)
 

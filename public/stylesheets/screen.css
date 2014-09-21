@@ -54,14 +54,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-@font-face {
-  font-family: "tungsten";
-  src: url("fonts/tungsten-semibold-webfont.eot");
-  src: url("fonts/tungsten-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/tungsten-semibold-webfont.woff") format("woff"), url("fonts/tungsten-semibold-webfont.ttf") format("truetype"), url("fonts/tungsten-semibold-webfont.svg#tungsten") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   font: normal 18px/1.6 "Open Sans", Arial, sans-serif;
 }
@@ -81,7 +73,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #2a2e35;
-  font-family: "noto serif", Arial, sans-serif;
+  font-family: "philosopher", Arial, sans-serif;
   font-weight: normal;
   line-height: 1.6;
 }
@@ -222,23 +214,22 @@ html, body {
 }
 #header.sticky #logo {
   display: block;
-  margin: 15px 0;
+  margin: 9px 0;
   position: absolute;
 }
 #header.sticky #logo img {
-  max-width: 120px;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
 }
-#header.sticky #main-nav {
-  text-align: right;
-}
 #header.sticky #main-nav a {
+  background: none;
+  border: none;
   color: white;
   font-size: 14px;
-  margin: 28px 15px;
+  margin: 0;
+  padding: 20px;
   text-shadow: none;
   -webkit-transition: font-size 0.4s;
   -moz-transition: font-size 0.4s;
@@ -247,6 +238,9 @@ html, body {
 }
 #header.sticky #main-nav a.active {
   color: #111111;
+}
+#header.sticky .phone {
+  display: block;
 }
 
 #logo {
@@ -264,6 +258,7 @@ html, body {
 }
 #logo img {
   float: left;
+  max-width: 110px;
   width: 100%;
 }
 
@@ -306,29 +301,49 @@ a#work-link {
   display: inline-block;
 }
 #main-nav a {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
   color: #222222;
   color: rgba(0, 0, 0, 0.7);
   display: block;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 200;
   letter-spacing: 0.5px;
-  margin: 40px 20px;
+  margin: 0 10px 40px;
+  padding: 12px 25px;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
   text-shadow: rgba(255, 255, 255, 0.2) 0 1px 2px;
-}
-#main-nav a.hireus {
-  background: #db4828;
-  margin: 2px 0 0;
-  padding: 10px 20px;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  -ms-border-radius: 1px;
-  -o-border-radius: 1px;
-  border-radius: 1px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 #main-nav a:hover, #main-nav a:focus {
-  color: black;
+  background: white;
+  color: #db4828;
+}
+
+.phone {
+  color: white;
+  display: none;
+  font-size: 14px;
+  padding: 20px;
+  position: absolute;
+  text-transform: uppercase;
+  right: 0;
+  text-decoration: none;
+  top: 0;
+}
+.phone i {
+  font-size: 21px;
+  left: -3px;
+  position: absolute;
 }
 
 #spaced {
@@ -377,7 +392,7 @@ a#work-link {
   line-height: 0.9;
 }
 #spaced h1 {
-  font-family: "noto serif";
+  font-family: "philosopher";
   font-size: 100px;
   text-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0;
 }
@@ -535,7 +550,7 @@ a#work-link {
 .content h1 span {
   display: block;
   line-height: 1.2;
-  margin: 25px 0;
+  margin: 25px 0 0;
 }
 .content p {
   text-align: center;
@@ -551,6 +566,7 @@ a#work-link {
 }
 .txt-heading h1 {
   color: #db4828;
+  margin-bottom: 0;
 }
 .txt-heading p {
   margin-bottom: 2em;
@@ -730,14 +746,55 @@ b {
   opacity: 0.2;
 }
 
+#about .wrapper > p {
+  margin: 0 25%;
+  width: 50%;
+}
+
+.team {
+  margin: 0 auto;
+  width: 1100px;
+  *zoom: 1;
+}
+.team:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.team li {
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 50%;
+}
+.team li > img {
+  position: absolute;
+  right: -32px;
+  top: 200px;
+  z-index: 10;
+}
+.team h2 {
+  color: #db4828;
+  font-size: 30px;
+  margin-top: 40px;
+}
+.team h2 img {
+  display: block;
+  height: 400px;
+  margin: 0 auto 30px;
+  width: 400px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  border-radius: 200px;
+}
+
 #form {
   padding-bottom: 6em;
 }
 #form .wrapper {
   width: 50%;
-}
-#form .txt-heading {
-  padding-bottom: 1em;
 }
 #form li {
   margin-bottom: 1.5em;

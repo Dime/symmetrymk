@@ -13,11 +13,13 @@
     Use the .htaccess and remove these lines to avoid edge case issues.
     More info: h5bp.com/b/378
   %meta{'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge,chrome=1'}
-  %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans", :rel => "stylesheet", :type => "text/css"}
-  %link{:href => 'http://fonts.googleapis.com/css?family=Noto+Serif&subset=latin,cyrillic', :rel => 'stylesheet', :type => 'text/css'}
-  %link{:href => "http://fonts.googleapis.com/css?family=Neucha|Marck+Script&subset=latin,cyrillic", :rel => "stylesheet", :type => "text/css"}
-  %link{:href => "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", :rel => "stylesheet" }
+  %link{href: "http://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet", type: "text/css"}
+  %link{href: 'http://fonts.googleapis.com/css?family=Noto+Serif&subset=latin,cyrillic', rel: 'stylesheet', type: 'text/css'}
+  %link{href: "http://fonts.googleapis.com/css?family=Neucha|Marck+Script&subset=latin,cyrillic", rel: "stylesheet", type: "text/css"}
+  %link{href: "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", rel: "stylesheet" }
+  
   %title= @title
+
   %meta{:name => 'description', :content => @description}
   %meta{:name => 'keywords', :content => ""}
   %meta{:name => 'author', :content => 'Dime Pashoski'}
