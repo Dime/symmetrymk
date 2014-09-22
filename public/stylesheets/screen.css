@@ -744,21 +744,35 @@ b {
   text-align: center;
   width: 18%;
 }
-#work i {
+#work li span {
   background: #eeeeee;
-  color: #666666;
   display: block;
-  font-size: 60px;
-  height: 150px;
-  line-height: 150px;
   margin: 0 auto 20px;
-  text-align: center;
+  overflow: hidden;
+  padding: 5px;
   width: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
   -ms-border-radius: 150px;
   -o-border-radius: 150px;
   border-radius: 150px;
+}
+#work i {
+  background: #f1f1f1;
+  border: 2px dotted white;
+  color: #666666;
+  display: block;
+  font-size: 60px;
+  height: 146px;
+  line-height: 146px;
+  text-align: center;
+  width: 146px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -ms-border-radius: 150px;
+  -o-border-radius: 150px;
+  border-radius: 150px;
+  text-shadow: white 1px 1px 2px;
 }
 
 #about .wrapper > p {

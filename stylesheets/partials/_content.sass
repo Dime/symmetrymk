@@ -150,18 +150,30 @@ b
     padding: 0 1%
     text-align: center
     width: 18%
-  i
-    $icon: 150px
+  
+  $icon: 150px
+
+  li span
     background: #eee
+    display: block
+    margin: 0 auto 20px
+    overflow: hidden
+    padding: 5px
+    width: $icon
+    +border-radius($icon)
+  i
+    
+    background: #f1f1f1
+    border: 2px dotted #fff
     color: #666
     display: block
     font-size: $icon / 2.5
-    height: $icon
-    line-height: $icon
-    margin: 0 auto 20px
+    height: $icon - 4px
+    line-height: $icon - 4px
     text-align: center
-    width: $icon
+    width: $icon - 4px
     +border-radius($icon)
+    +text-shadow(#fff 1px 1px 2px)
 
 #about .wrapper > p
   margin: 0 25%
