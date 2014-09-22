@@ -735,6 +735,9 @@ b {
   border-radius: 2px;
 }
 
+#work {
+  padding-bottom: 6em;
+}
 #work ul {
   padding: 1em 2em 0;
   text-align: center;
@@ -793,6 +796,26 @@ b {
   -o-border-radius: 150px;
   border-radius: 150px;
   text-shadow: white 1px 1px 2px;
+}
+
+#quote {
+  background: rgba(219, 72, 40, 0.7);
+  padding: 7em 0;
+}
+#quote .wrapper {
+  width: 60%;
+}
+#quote h1, #quote p {
+  color: white;
+}
+#quote h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+#quote h1 img {
+  display: inline-block;
 }
 
 #about .wrapper > p {
