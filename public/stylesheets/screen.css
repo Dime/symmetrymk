@@ -799,7 +799,7 @@ b {
 }
 
 #quote {
-  background: rgba(219, 72, 40, 0.7);
+  background: rgba(219, 72, 40, 0.75);
   padding: 7em 0;
 }
 #quote .wrapper {
@@ -809,13 +809,19 @@ b {
   color: white;
 }
 #quote h1 {
-  font-size: 40px;
+  font-size: 36px;
   line-height: 1.2;
   margin-bottom: 0.5em;
   text-align: center;
 }
 #quote h1 img {
   display: inline-block;
+}
+#quote p {
+  font-weight: 600;
+}
+#quote p span {
+  font-weight: 300;
 }
 
 #about .wrapper > p {
