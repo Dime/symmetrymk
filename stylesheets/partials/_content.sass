@@ -144,12 +144,24 @@ b
 #work
   ul
     display: table
+    table-layout: fixed
   li
     display: table-cell
+    padding: 0 1%
     text-align: center
-  ul img
-    margin-bottom: 20px
-    opacity: .2
+    width: 18%
+  i
+    $icon: 150px
+    background: #eee
+    color: #666
+    display: block
+    font-size: $icon / 2.5
+    height: $icon
+    line-height: $icon
+    margin: 0 auto 20px
+    text-align: center
+    width: $icon
+    +border-radius($icon)
 
 #about .wrapper > p
   margin: 0 25%

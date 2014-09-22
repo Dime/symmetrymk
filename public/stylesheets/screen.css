@@ -55,7 +55,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  font: normal 18px/1.6 "Open Sans", Arial, sans-serif;
+  font: normal 20px/1.6 "Open Sans", Arial, sans-serif;
 }
 
 .horizontal {
@@ -736,14 +736,29 @@ b {
 
 #work ul {
   display: table;
+  table-layout: fixed;
 }
 #work li {
   display: table-cell;
+  padding: 0 1%;
   text-align: center;
+  width: 18%;
 }
-#work ul img {
-  margin-bottom: 20px;
-  opacity: 0.2;
+#work i {
+  background: #eeeeee;
+  color: #666666;
+  display: block;
+  font-size: 60px;
+  height: 150px;
+  line-height: 150px;
+  margin: 0 auto 20px;
+  text-align: center;
+  width: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -ms-border-radius: 150px;
+  -o-border-radius: 150px;
+  border-radius: 150px;
 }
 
 #about .wrapper > p {
