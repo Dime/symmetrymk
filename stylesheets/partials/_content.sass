@@ -4,7 +4,7 @@
   z-index: 5
   @include pie-clearfix
   h1
-    font-size: 45px
+    font-size: 50px
     text-align: center
     img
       display: inline-block
@@ -143,13 +143,26 @@ b
 
 #work
   ul
-    display: table
-    table-layout: fixed
-  li
-    display: table-cell
-    padding: 0 1%
+    padding: 1em 2em 0
     text-align: center
-    width: 18%
+    +pie-clearfix
+  li
+
+    display: inline-block
+    float: left
+    padding: 0 1.5%
+    text-align: center
+    width: 20%
+    +box-sizing(border-box)
+
+  h2
+    color: $two
+    font-size: 24px
+    line-height: 1.2
+    margin-bottom: 15px
+
+  p
+    font-size: 15px
   
   $icon: 150px
 
@@ -175,9 +188,10 @@ b
     +border-radius($icon)
     +text-shadow(#fff 1px 1px 2px)
 
-#about .wrapper > p
-  margin: 0 25%
-  width: 50%
+#about 
+  .wrapper > p
+    margin: 0 25%
+    width: 50%
 
 .team
   margin: 0 auto

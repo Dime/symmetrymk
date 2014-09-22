@@ -55,7 +55,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  font: normal 20px/1.6 "Open Sans", Arial, sans-serif;
+  color: #444444;
+  font: 300 18px/1.6 "Open Sans", Arial, sans-serif;
 }
 
 .horizontal {
@@ -307,7 +308,7 @@ a#work-link {
   color: rgba(0, 0, 0, 0.7);
   display: block;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 0.5px;
   margin: 0 10px 40px;
   padding: 12px 25px;
@@ -541,7 +542,7 @@ a#work-link {
   clear: both;
 }
 .content h1 {
-  font-size: 45px;
+  font-size: 50px;
   text-align: center;
 }
 .content h1 img {
@@ -735,14 +736,33 @@ b {
 }
 
 #work ul {
+  padding: 1em 2em 0;
+  text-align: center;
+  *zoom: 1;
+}
+#work ul:after {
+  content: "";
   display: table;
-  table-layout: fixed;
+  clear: both;
 }
 #work li {
-  display: table-cell;
-  padding: 0 1%;
+  display: inline-block;
+  float: left;
+  padding: 0 1.5%;
   text-align: center;
-  width: 18%;
+  width: 20%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#work h2 {
+  color: #db4828;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+#work p {
+  font-size: 15px;
 }
 #work li span {
   background: #eeeeee;
@@ -832,7 +852,7 @@ b {
   background: rgba(0, 0, 0, 0.01);
   border: 1px solid #eeeeee;
   color: #444444;
-  font: normal 1em/1.4 "open sans";
+  font: 300 1em/1.4 "open sans";
   padding: 15px;
   width: 100%;
   -webkit-box-sizing: border-box;
