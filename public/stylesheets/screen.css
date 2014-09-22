@@ -310,8 +310,8 @@ a#work-link {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.5px;
-  margin: 0 10px 40px;
-  padding: 12px 25px;
+  margin: 0 10px 30px;
+  padding: 10px 24px;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-border-radius: 50px;
@@ -359,7 +359,7 @@ a#work-link {
   background-image: linear-gradient(#080813, #000000);
 }
 #spaced h1 {
-  margin-top: 13%;
+  margin-top: 10%;
   text-align: center;
   *zoom: 1;
 }
@@ -370,7 +370,7 @@ a#work-link {
 }
 #spaced h1 img {
   margin: 0 auto;
-  width: 37%;
+  width: 40%;
 }
 #spaced .wrapper {
   color: white;
@@ -432,87 +432,6 @@ a#work-link {
   width: 100%;
 }
 
-.scroll {
-  bottom: 0;
-  color: white;
-  font-size: 12px;
-  opacity: 0;
-  position: absolute;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-  z-index: 2;
-}
-.scroll a {
-  background: #00010c;
-  color: white;
-  display: block;
-  margin: 0 auto;
-  max-width: 180px;
-  opacity: 0.6;
-  padding: 25px 0 10px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-}
-.scroll a:hover, .scroll a:focus {
-  opacity: 1;
-}
-.scroll span {
-  display: none;
-  margin-bottom: 15px;
-}
-
-#mini-nav {
-  display: inline-block;
-  left: 10px;
-  position: absolute;
-  top: 10px;
-}
-#mini-nav a {
-  display: block;
-  font-size: 0.8em;
-  line-height: 40px;
-  overflow: hidden;
-  position: relative;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-}
-#mini-nav a span {
-  display: none;
-  height: 40px;
-  left: 0;
-  position: absolute;
-  top: 0;
-}
-#mini-nav a i {
-  background: #06121d;
-  color: #db4828;
-  display: block;
-  float: left;
-  font-size: 1.2em;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  width: 40px;
-}
-#mini-nav a:hover, #mini-nav a:focus {
-  background: #06121d;
-  color: white;
-  min-width: 200px;
-}
-#mini-nav a:hover span, #mini-nav a:focus span {
-  display: block;
-}
-#mini-nav img {
-  float: left;
-}
-
 #waves {
   overflow: hidden;
   position: relative;
@@ -526,6 +445,7 @@ a#work-link {
 #waves h2 {
   background: white;
   font-size: 40px;
+  line-height: 1.4;
   padding: 90px 20% 0;
   text-align: center;
 }
