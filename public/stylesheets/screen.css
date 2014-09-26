@@ -445,7 +445,7 @@ a#work-link {
 }
 #headline h2 {
   background: white;
-  font-size: 36px;
+  font-size: 38px;
   line-height: 1.4;
   padding: 90px 25% 0;
   text-align: center;
@@ -979,7 +979,7 @@ b {
   opacity: 1;
 }
 
-#fav-movie {
+#fav_movie {
   display: none;
 }
 
