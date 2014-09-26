@@ -16,7 +16,7 @@
     text-align: center
 
 .txt-heading
-  padding: 8em 0 2.5em
+  padding: 8em 0 1.5em
   text-align: center
   h1, h2
     line-height: .85
@@ -144,7 +144,7 @@ b
 #work
   padding-bottom: 6em
   ul
-    padding: 1em 2em 0
+    padding: 2em 4em 0
     text-align: center
     +pie-clearfix
   li
@@ -170,7 +170,7 @@ b
   li span
     background: #eee
     display: block
-    margin: 0 auto 20px
+    margin: 0 auto 30px
     overflow: hidden
     padding: 5px
     width: $icon
@@ -196,6 +196,7 @@ b
     width: 60%
   h1, p
     color: #fff
+    +text-shadow(rgba(0, 0, 0, 0.1) 1px 1px 2px)
   h1
     font-size: 36px
     line-height: 1.2
@@ -204,11 +205,17 @@ b
     img
       display: inline-block
   p
+    font-size: 21px
+    font-style: italic
     font-weight: 600
+    a
+      color: inherit
+      text-decoration: none
     span
       font-weight: 300
 
-#about 
+#about
+  padding-bottom: 6em 
   .wrapper > p
     margin: 0 25%
     width: 50%

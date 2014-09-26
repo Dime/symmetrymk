@@ -1,20 +1,27 @@
 #form
+  background: #f5f5f5
   padding-bottom: 6em
   .wrapper
     width: 50%
+
+  .txt-heading
+    padding-top: 6em
 
   li
     margin-bottom: 1.5em
 
   input[type=text], select, textarea
-    background: rgba(0, 0, 0, 0.01)
-    border: 1px solid #eee
+    background: #fff
+    border: 1px solid #e5e5e5
     color: #444
     font: 300 1em/1.4 'open sans'
     padding: 15px
     width: 100%
-    @include box-sizing(border-box)
+    +box-sizing(border-box)
+    +transition(all .4s)
     +border-radius(3px)
+    &:hover
+      border-color: #999
     &:focus
       border-color: $two
       outline: none
@@ -33,7 +40,10 @@
     font-weight: bold
     padding: .8em 3em
     text-transform: uppercase
-    @include border-radius(3px)
+    +border-radius(3px)
+    +transition(all .4s)
+    &:hover, &:focus
+      background: #333
 
 
 //
