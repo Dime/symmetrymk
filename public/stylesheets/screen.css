@@ -640,6 +640,7 @@ b {
 .team h2 img {
   display: block;
   margin: 0 auto 30px;
+  max-width: 350px;
   width: 100%;
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
