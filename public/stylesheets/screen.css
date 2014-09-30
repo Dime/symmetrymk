@@ -441,6 +441,7 @@ a#work-link {
 }
 #headline img {
   display: block;
+  max-width: 600px;
   width: 100%;
 }
 #headline h2 {
