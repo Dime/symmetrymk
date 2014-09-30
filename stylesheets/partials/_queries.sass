@@ -71,7 +71,7 @@
   #header
     padding: 0 10px
     #main-nav
-      margin-bottom: 20px
+
       li
         float: left
         width: 33.33%
@@ -88,6 +88,13 @@
       a
         font-size: 12px
         margin: 0
+    #secondary-nav
+      margin: 2px
+      position: static
+      text-align: center
+      li
+        display: inline-block
+        float: none
 
   #header.sticky
     bottom: auto
@@ -108,7 +115,6 @@
       > span a
         font-size: 14px
 
-  #header.sticky
     #main-nav
       clear: both
       display: none
@@ -134,6 +140,8 @@
               background: transparent
             &.active
               color: #FFF
+    #secondary-nav
+      display: none
     #menu-toggle
       display: block
       font-size: 10px

@@ -100,6 +100,35 @@ a#work-link
     &:hover, &:focus
       background: #fff
       color: $two
+
+#secondary-nav
+  margin: 16px
+  position: absolute
+  right: 0
+  top: 0
+  a, span
+    color: #fff
+    display: block
+    line-height: 1
+    margin-left: 2px
+    padding: 5px
+  span
+    font-size: 14px
+    padding: 9px
+  a
+    border: 1px solid transparent
+    color: rgba(255, 255, 255, .7)
+    +transition(all .4s)
+    i
+      font-size: 20px
+      line-height: 20px
+      text-align: center
+      width: 20px
+    &:hover, &:focus
+      border: 1px solid #fff
+      color: #fff
+      +border-radius(20px)
+
     
 .phone
   color: #fff

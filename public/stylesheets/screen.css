@@ -331,6 +331,47 @@ a#work-link {
   color: #db4828;
 }
 
+#secondary-nav {
+  margin: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#secondary-nav a, #secondary-nav span {
+  color: white;
+  display: block;
+  line-height: 1;
+  margin-left: 2px;
+  padding: 5px;
+}
+#secondary-nav span {
+  font-size: 14px;
+  padding: 9px;
+}
+#secondary-nav a {
+  border: 1px solid transparent;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+#secondary-nav a i {
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  width: 20px;
+}
+#secondary-nav a:hover, #secondary-nav a:focus {
+  border: 1px solid white;
+  color: white;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+
 .phone {
   color: white;
   display: none;
@@ -863,13 +904,31 @@ b {
 }
 #footer p {
   clear: both;
+  color: #888888;
+  color: rgba(255, 255, 255, 0.4);
   font-size: 0.7em;
-  opacity: 0.3;
   padding: 10em 0 0;
   text-align: center;
 }
 #footer p img {
   padding: 0 0 15px;
+}
+#footer p span {
+  color: #888888;
+  color: rgna(255, 255, 255, 0.4);
+}
+#footer p a {
+  color: #888888;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1em;
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+#footer p a:hover, #footer p a:focus {
+  color: white;
 }
 
 .tipsy {
@@ -1080,9 +1139,6 @@ b {
   #header {
     padding: 0 10px;
   }
-  #header #main-nav {
-    margin-bottom: 20px;
-  }
   #header #main-nav li {
     float: left;
     width: 33.33%;
@@ -1116,6 +1172,15 @@ b {
   #header #main-nav a {
     font-size: 12px;
     margin: 0;
+  }
+  #header #secondary-nav {
+    margin: 2px;
+    position: static;
+    text-align: center;
+  }
+  #header #secondary-nav li {
+    display: inline-block;
+    float: none;
   }
 
   #header.sticky {
@@ -1152,7 +1217,6 @@ b {
   #header.sticky .wrapper > span a {
     font-size: 14px;
   }
-
   #header.sticky #main-nav {
     clear: both;
     display: none;
@@ -1188,6 +1252,9 @@ b {
   }
   #header.sticky #main-nav ul li a.active {
     color: white;
+  }
+  #header.sticky #secondary-nav {
+    display: none;
   }
   #header.sticky #menu-toggle {
     display: block;
