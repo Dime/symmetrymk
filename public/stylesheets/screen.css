@@ -1041,6 +1041,10 @@ b {
   }
 }
 @media only screen and (max-width: 800px) {
+  .phone {
+    display: none !important;
+  }
+
   #spaced hgroup {
     top: 30%;
   }
@@ -1071,63 +1075,122 @@ b {
     margin: 0 auto;
   }
 
-  #menu-toggle {
-    display: block;
-    font-size: 10px;
-    padding: 2px;
+  #header {
+    padding: 0 10px;
+  }
+  #header #main-nav {
+    margin-bottom: 20px;
+  }
+  #header #main-nav li {
+    float: left;
+    width: 33.33%;
+  }
+  #header #main-nav li a {
+    border-right: 0;
+    padding: 10px 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+  }
+  #header #main-nav li:first-child a {
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    border-top-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  #header #main-nav li:last-child a {
+    border: 1px solid white;
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  #header #main-nav a {
+    font-size: 12px;
+    margin: 0;
   }
 
-  #header, #header.sticky {
+  #header.sticky {
     bottom: auto;
+    padding: 0;
     position: fixed;
     top: 0;
+    *zoom: 1;
     -webkit-transition: background 0.4s;
     -moz-transition: background 0.4s;
     -o-transition: background 0.4s;
     transition: background 0.4s;
   }
-  #header #logo, #header.sticky #logo {
-    margin-bottom: 0;
+  #header.sticky:after {
+    content: "";
+    display: table;
+    clear: both;
   }
-  #header #logo img, #header.sticky #logo img {
+  #header.sticky #logo {
+    float: left;
+    position: static;
+    margin: 5px 0 5px 5px;
+  }
+  #header.sticky #logo img {
     max-width: 100px;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
   }
-  #header .wrapper, #header.sticky .wrapper {
+  #header.sticky .wrapper {
     width: 90%;
   }
-  #header .wrapper > span a, #header.sticky .wrapper > span a {
+  #header.sticky .wrapper > span a {
     font-size: 14px;
   }
 
-  #main-nav {
+  #header.sticky #main-nav {
+    clear: both;
     display: none;
     width: 100%;
   }
-  #main-nav ul {
+  #header.sticky #main-nav ul {
     border-top: 1px solid rgba(255, 255, 255, 0.04);
-    margin: 1em -5.5% 0;
-    width: 111%;
+    margin: 0;
   }
-  #main-nav ul li {
+  #header.sticky #main-nav ul li {
     border-top: 1px solid rgba(255, 255, 255, 0.04);
     width: 100%;
   }
-  #main-nav ul li:hover {
+  #header.sticky #main-nav ul li:hover {
     background: #db4828;
   }
-  #main-nav ul li a, #main-nav ul li .hireus {
+  #header.sticky #main-nav ul li a {
+    border: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 14px;
+    margin-bottom: 0;
     padding-left: 5%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
-  #main-nav ul li a.hireus, #main-nav ul li .hireus.hireus {
+  #header.sticky #main-nav ul li a.hireus {
     background: transparent;
   }
-  #main-nav ul li a.active, #main-nav ul li .hireus.active {
+  #header.sticky #main-nav ul li a.active {
     color: white;
+  }
+  #header.sticky #menu-toggle {
+    display: block;
+    font-size: 10px;
+    padding: 10px;
   }
 
   .wrapper {
