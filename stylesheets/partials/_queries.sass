@@ -38,6 +38,27 @@
   #main-nav
     display: block !important
 
+  #secondary-nav
+    margin: 10px 30px 0
+    position: fixed
+    top: 20px
+    right: 20px
+    a, span
+      color: #000
+    a
+      color: rgba(0, 0, 0, 0.7)
+    span
+      font-weight: 400
+
+  #header.sticky
+    #secondary-nav
+      right: 0
+      top: 0
+      a, span
+        color: #fff
+      a
+        color: rgba(255, 255, 255, 0.7)
+
   .wrapper
     max-width: 1280px
 
