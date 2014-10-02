@@ -1157,10 +1157,6 @@ b {
   }
 }
 @media only screen and (max-width: 800px) {
-  .phone {
-    display: none !important;
-  }
-
   #spaced hgroup {
     top: 30%;
   }
