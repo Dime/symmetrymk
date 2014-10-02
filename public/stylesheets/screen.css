@@ -1118,7 +1118,8 @@ b {
     margin-top: 10%;
   }
   #spaced h1 img {
-    width: 40%;
+    height: 60%;
+    width: auto;
   }
 }
 @media only screen and (max-width: 800px) and (orientation: portrait) {
