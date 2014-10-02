@@ -877,7 +877,8 @@ b {
 }
 
 #footer {
-  background: #06121d;
+  background: #222222;
+  background: rgba(0, 0, 0, 0.85);
   color: white;
   padding: 100px 0 25px;
   position: relative;
