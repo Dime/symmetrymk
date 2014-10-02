@@ -1113,6 +1113,13 @@ b {
     max-width: 1280px;
   }
 }
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  #space img {
+    height: 100%;
+    margin-left: -50%;
+    width: auto;
+  }
+}
 @media only screen and (max-width: 800px) {
   .phone {
     display: none !important;
@@ -1134,12 +1141,6 @@ b {
 
   #space {
     position: absolute;
-  }
-  #space img {
-    margin-left: -50%;
-    min-height: 100%;
-    min-width: 100%;
-    width: auto;
   }
 
   .half, .third, .two-thirds, .fourth {
