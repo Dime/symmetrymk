@@ -10,13 +10,13 @@
 
   .wrapper
     %h1
-      %img{src: '/images/headline.svg'}
+      %img{src: '/images/headline.svg', alt:'Translating & Creative Content Agency' }
 
   #space
-    %img{src:'/images/bg-light.jpg'}
+    %img{src:'/images/bg-light.jpg', alt:'Background'}
 
 #headline
-  %img{src: '/images/waves.png'}
+  %img{src: '/images/waves.png', alt:'Waves'}
   %h2 We translate, create original content and make words sound meaningful in Macedonian, English, Albanian, Italian, Spanish & German.
   
 
@@ -24,7 +24,7 @@
   .wrapper
     .txt-heading
       %h1
-        %img{src: '/images/divider.svg'}
+        %img{src: '/images/divider.svg', alt:'Divider'}
         %span
           As professionals,
           %br
@@ -69,10 +69,17 @@
   .wrapper
 
     %h1
-      %img{src: '/images/divider-light.svg'}
+      %img{src: '/images/divider-light.svg'  #spaced
+    hgroup
+      top: 30%
+    h1
+      font-size: 110px
+      margin-top: 20%
+      img
+        width: 100%}
       %span Symmetry Translations is a team of professionals who always deliver their work on time, with maximum efficiency and quality.
     %p
-      %a{href:'http://www.polenak.com.mk/', target:'_blank'}
+      %a{href:'http://www.polenak.com.mk/', title:'Polenak Law Firm' target:'_blank'}
         Polenak,
         %span Law Firm
 
@@ -81,7 +88,7 @@
   .wrapper
     .txt-heading
       %h1
-        %img{src: '/images/divider.svg'}
+        %img{src: '/images/divider.svg', alt:'Divider'}
         %span Who we are
     %p
       Our translational and content service will bring to life your projects in exhilarating and innovative ways. We are:
@@ -89,23 +96,21 @@
     %ul.team
       %li
         %h2
-          %img{src:'/images/aleksandra.jpg'}
+          %img{src:'/images/aleksandra.jpg', alt:'Aleksandra Popovski-Golubovikj'}
           Aleksandra Popovski-Golubovikj
         %p co-founder, translator and ESOL lecturer
-        %img{src:'/images/and.svg'}
+        %img{src:'/images/and.svg', alt:'And'}
       %li
         %h2
-          %img{src:'/images/darka.jpg'}
+          %img{src:'/images/darka.jpg', alt:'Darka Panovska'}
           Darka Panovska
         %p co-founder, translator and content strategist
 
 %section#contact#form.content
-  #aurora
-    / %img{src: '/images/bg-aurora.jpg'}
   .wrapper
     .txt-heading
       %h1
-        %img{src: '/images/divider.svg'}
+        %img{src: '/images/divider.svg', alt:'Divider'}
         %span Get in touch
 
     %form{name: 'contact_email', action: '/', method: 'post'}
