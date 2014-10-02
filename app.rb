@@ -34,7 +34,7 @@ class SinatraBootstrap < Sinatra::Base
   get '/' do
     @title = "Symmetry Translations: Translating & Creative Content Agency"
     @description = "We translate, create original content and make words sound meaningful in Macedonian, English, Albanian, Italian, Spanish & German."
-    @keywords = "translation company, translation companies, translation firm, translation agency, copywriting, skopje, macedonia, превод, судски превод, англиски превод, стручен превод, скопје, македонија"
+    @keywords = "translation company, translation companies, translation firm, translation agency, copywriting, skopje, macedonia, prevod, sudski prevod, angliski prevod, struchen prevod, makedonija"
     @author = "Dime Pashoski, exterminateart.com"
     haml :index
   end
