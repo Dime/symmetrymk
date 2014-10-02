@@ -1103,7 +1103,7 @@ b {
     margin: 10px 30px 0;
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 10px;
   }
   #secondary-nav a, #secondary-nav span {
     color: black;
