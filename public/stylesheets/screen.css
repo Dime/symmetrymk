@@ -482,7 +482,6 @@ a#work-link {
 .content {
   background: white;
   position: relative;
-  z-index: 5;
   *zoom: 1;
 }
 .content:after {
@@ -1133,9 +1132,13 @@ b {
     font-size: 28px;
   }
 
+  #space {
+    position: absolute;
+  }
   #space img {
-    height: 100%;
     margin-left: -50%;
+    min-height: 100%;
+    min-width: 100%;
     width: auto;
   }
 
@@ -1300,6 +1303,9 @@ b {
     margin-bottom: 0.5em;
   }
 
+  #headline img {
+    display: none;
+  }
   #headline h2 {
     font-size: 22px;
     padding: 60px 10% 0;

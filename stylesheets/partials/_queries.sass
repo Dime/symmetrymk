@@ -76,11 +76,14 @@
     h2
       font-size: 28px
 
-  #space img
-    height: 100%
-    margin-left: -50%
+  #space
     position: absolute
-    width: auto
+    img
+      // height: 100%
+      margin-left: -50%
+      min-height: 100%
+      min-width: 100%
+      width: auto
 
   .half, .third, .two-thirds, .fourth
     display: block
@@ -184,9 +187,12 @@
     line-height: 1
     margin-bottom: .5em
 
-  #headline h2
-    font-size: 22px
-    padding: 60px 10% 0
+  #headline
+    img
+      display: none
+    h2
+      font-size: 22px
+      padding: 60px 10% 0
 
   #work
     padding-bottom: 2em
