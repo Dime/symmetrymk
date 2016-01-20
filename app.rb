@@ -35,7 +35,7 @@ class SinatraBootstrap < Sinatra::Base
     @title = "Symmetry Translations: Translating & Creative Content Agency"
     @description = "We translate, create original content and make words sound meaningful in Macedonian, English, Albanian, Italian, Spanish & German."
     @keywords = "translation company, translation companies, translation firm, translation agency, copywriting, skopje, macedonia, prevod, sudski prevod, angliski prevod, struchen prevod, makedonija"
-    @author = "Dime Pashoski, exterminateart.com"
+    @author = "Dime Pashoski, highvoltage.xyz"
     haml :index
   end
 
@@ -43,7 +43,7 @@ class SinatraBootstrap < Sinatra::Base
 
   post '/' do
     unless EmailValidator.validate(request.params)
-      flash[:error] = 'Your email form is invalid!'
+      flash[:error] = 'Your email form is invalid.'
     end
 
     EmailSender.deliver_hire_email(request.params)
